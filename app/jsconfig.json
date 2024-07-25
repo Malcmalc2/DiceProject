@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "target": "ES2020",
+    "jsx": "react",
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "baseUrl": ".",
+    "paths": {
+      "/*": [
+        "./*"
+      ],
+      "meteor/aldeed:collection2": [
+        "packages\\collection2\\collection2.js"
+      ]
+    },
+    "checkJs": false,
+    "allowJs": true
+  },
+  "vueCompilerOptions": {
+    "target": 2 // For Vue version <= 2.6.14
+  },
+  "exclude": [
+    "node_modules",
+    "**/node_modules/*",
+    ".meteor"
+  ],
+  "typeAcquisition": {
+    "include": [
+      "meteor"
+    ]
+  }
+}
